@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
- * pirnt_number - prints the numbers, from 0 to 14 10 times
- *
- * Return: void
+ * more_numbers - nmbr fct
+ * Bwave ICT file
+ * Return: no return
  */
+
 void more_numbers(void)
 {
 
