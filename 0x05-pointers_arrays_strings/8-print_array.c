@@ -2,9 +2,8 @@
 #include <stdio.h>
 /**
  * print_array - prints n element of an array of integers
- * @a: int to check
- * @n: int to check
- * 
+ * @a: int to pointer
+ * @n: int to pointer
  * Return: 0 is success
  */
 void print_array(int *a, int n)

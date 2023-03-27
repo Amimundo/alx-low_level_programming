@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * puts_half - prints half of a string
- * @str: char to check
+ * @str: char to pointer
  *
  * Return: 0 is success
  */
