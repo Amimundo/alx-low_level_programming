@@ -6,26 +6,20 @@
  * @dest:char destination 
  * @src:char source
  * @n: The length of int
- *
  * Return: pointer to the resulting string dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-    char *conct = dest;
-	int i = 0;
+	int a, b;
 
-    while (*dest != '\0')
+	for (a = 0; dest[a] != '\0'; a++)
 	{
-		dest++;
+		continue;
 	}
-
-	while (*src != '\0' && i > n)
+	for (b = 0; src[b] != '\0' && b < n; b++)
 	{
-		*dest = *src;
-		dest++;
-		src++;
-        i++;
+		dest[a + b] = src[b];
 	}
-	*dest = '\0';
+	dest[a + b] = '\0';
 	return (dest);
 }
