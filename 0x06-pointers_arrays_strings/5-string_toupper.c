@@ -1,19 +1,18 @@
 #include "main.h"
 /**
- * string_toupper - change lowercase to uppercase
- * @c:string uppercase
- * Return:string lowercase
- */
-char *string_toupper(char *c)
-{
+ * *string_toupper - capitalize a string
+ * @str: pointer
+ * Return: capitalzied string
+*/
 
+char *string_toupper(char *str)
+{
 	int i;
 
-    i = 0;
-    for (int i = 0; *(c + i); i++)
-    {
-        if (*(c + i) >= 'a' && *(c + i) <= 'z')
-			*(c + i) -= 'a' - 'A';
-    }
-	return (i);
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if (str[i] <= 'z' && str[i] >= 'a')
+			str[i] -= 32;
+	}
+	return (str);
 }
