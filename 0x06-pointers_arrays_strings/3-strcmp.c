@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates two strings
+ * _strcmp - function that compares two strings.
  *
  * @s1:char string1  
  * @s2:char string 2
