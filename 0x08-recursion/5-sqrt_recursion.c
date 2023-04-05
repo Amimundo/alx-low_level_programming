@@ -1,18 +1,18 @@
 #include "main.h"
 /**
- * sqrt - checks for the square root
+ * _sqrt - checks for the square root
  * @a:int
  * @b:int
  *
  * return: int value
  */
-int sqrt(int a, int b)
+int _sqrt(int a, int b)
 {
     if (a * a > b)
 		return (-1);
 	if (a * a == b)
 		return (a);
-	return (sqrt(a + 1, b));
+	return (_sqrt(a + 1, b));
 }
 
 /**
@@ -24,5 +24,5 @@ int _sqrt_recursion(int n)
 {
 	if (n == 0)
 		return (0);
-	return (sqrt(1, n));
+	return (_sqrt(1, n));
 }
