@@ -13,10 +13,10 @@ char *argstostr(int ac, char **av)
 	char *str, *s;
 	int i, j, k, len = 0;
 
-	if (ac == 0 || av == NULL) // if there is no  arguments return NULL
+	if (ac == 0 || av == NULL) /* if there is no  arguments return NULL*/
 		return (NULL);
 
-	for (i = 0; i < ac; i++) // get total of bytes of all the arguments
+	for (i = 0; i < ac; i++) /* get total of bytes of all the arguments*/
 	{
 		s = av[i];
 		j = 0;
@@ -26,11 +26,11 @@ char *argstostr(int ac, char **av)
 		len++;
 	}
 
-	str = (char *)malloc(sizeof(char) * (len + 1)); // allocate space using malloc
+	str = (char *)malloc(sizeof(char) * (len + 1)); /* allocate space using malloc*/
 	if (str == NULL)
 		return (NULL);
 
-	for (i = 0, j = 0; i < ac && j < len; i++) // Concatenate all the argments
+	for (i = 0, j = 0; i < ac && j < len; i++) /* Concatenate all the argments*/
 	{
 		s = av[i];
 		k = 0;
